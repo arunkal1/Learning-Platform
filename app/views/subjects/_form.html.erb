@@ -3,7 +3,7 @@
 
 <% if subject.errors.any? %>
   <h2> <%= pluralize(subject.errors.count,'error') %> to fix </h2>
-  <% subject.errors.full_messages.each do |message| %>
+  <% subject.errors.each do |attr, message| %>
     <ul>
       <li><%= message %></li>
     </ul>
