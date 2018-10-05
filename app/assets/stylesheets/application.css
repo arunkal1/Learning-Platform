@@ -78,3 +78,16 @@ body{
   margin-bottom: 10px;
   height: 50px;
 }
+
+.jumbotron .container {
+  /* background-color: lightgrey; */
+  /* opacity: 0.7; */
+  /* width: 600px; */
+  position: relative;
+  top: 300px;
+  /* left: 00px; */
+}
+
+.display-4, .lead {
+  color: white;
+}
