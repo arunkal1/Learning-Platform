@@ -4,7 +4,7 @@
     <% @subjects.each do |subject| %>
     <div class="col-md-4">
       <div class="card" style="width: 18rem;">
-        <%= image_tag "#{subject.img}" %>
+        <%= image_tag "#{subject.img}", class: "image_style"%>
         <div class="card-body">
           <h5 class="card-title"><%= link_to "#{subject.name}", subject %></h5>
           <p class="card-text"><%= subject.desc %></p>
