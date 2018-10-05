@@ -9,19 +9,28 @@
     </ul>
   <% end %>
 <% end %>
-
-<div class="field">
-  <%= s.label :name %>
-  <%= s.text_field :name %>
+<center>
+<div class="form">
+  <div class="field">
+    <%= s.label :Name %>
+    <div class="nameInput">
+      <%= s.text_field :name %>
+    </div>
+  </div>
+  <br>
+  <div class="field">
+    <%= s.label :Description %>
+    <div class="descInput">
+      <%= s.text_area :desc %>
+    </div>
+  </div>
+  <br>
+  <div class="field">
+    <div class="button">
+      <%= s.submit  %>
+    </div>
+  </div>
 </div>
-<br>
-<div class="field">
-  <%= s.label :description %>
-  <%= s.text_area :desc %>
-</div>
-<br>
-<div class="field">
-  <%= s.submit  %>
-</div>
+</center>
 
 <% end %>

@@ -13,3 +13,39 @@
  *= require_tree .
  *= require_self
  */
+.body{
+  background-color: #fafafa;
+}
+
+.form{
+  background-color: white;
+  /* justify-content: center; */
+  margin: auto;
+  width: 35vw;
+  margin: 0px;
+  border: 1px solid grey;
+  border-radius: 20px;
+}
+
+.nameInput input{
+  /* justify-content: center; */
+  width: 30vw;
+  background-color: #f2f2f2;
+}
+
+.descInput textarea{
+  /* justify-content: center; */
+  width: 30vw;
+  height: 400px;
+  background-color: #f2f2f2;
+}
+
+.button input{
+  /* justify-content: center; */
+  width: 30vw;
+  background-color: #404040;
+  color: white;
+  border-radius: 100px;
+  margin-bottom: 10px;
+  height: 50px;
+}
