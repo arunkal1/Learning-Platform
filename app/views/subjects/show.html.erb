@@ -3,9 +3,14 @@
   <%= image_tag "#{@subject.img}" %>
   <p> <%=@subject.desc%></p>
   <br>
+  <%= render partial: 'topics/topics', collection: @subject.topics, as: :topic %>
+  <br>
+
+  <%= link_to "New Topic", new_subject_topic_path(@subject,) %>
+  <br>
+
   <%= link_to "Edit Subject", edit_subject_path %>
   -
   <%= link_to "Delete Subject", @subject, method: :delete %>
 
-  <%= render partial: 'topics/topics', collection: @subject.topics, as: :topic %>
 </div>
