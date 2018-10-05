@@ -17,13 +17,16 @@ class TopicsController < ApplicationController
   def create
     # Create a new topic related to the subject
     @topic = @subject.topics.create(topic_params)
+    respond_to do |format|
+      if @topic.save
+        format.html{redirect_to @subject, notice: "#{@topic.name} was created"}
+      else
+        format.html{render :new}
+      end
+    end
 
     # Development not related to subject
     # @topic = Topic.new topic_params
-
-
-    @topic.save
-    redirect_to @subject
 
 
     # development
@@ -32,8 +35,14 @@ class TopicsController < ApplicationController
 
   def update
     @topic = Topic.find params[:id]
-    @topic.update topic_params
-    redirect_to @subject
+
+    respond_to do |format|
+      if @topic.update topic_params
+        format.html{redirect_to @subject, notice: "#{@topic.name} was created"}
+      else
+        format.html{render :new}
+      end
+    end
 
     # development
     # redirect_to @topics
