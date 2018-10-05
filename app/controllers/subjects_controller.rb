@@ -19,7 +19,7 @@ class SubjectsController < ApplicationController
     @subject = Subject.new subject_params
     respond_to do |format|
       if @subject.save
-        format.html{redirect_to @subject, notice: "#{subject.name} was created"}
+        format.html{redirect_to @subject, notice: "#{@subject.name} was created"}
       else
         format.html{render :new}
       end
