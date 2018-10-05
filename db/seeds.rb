@@ -6,7 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-
 Subject.create(name: 'HTML', desc: 'HTML stands for Hyper Text Markup Language. HTML describes the structure of Web pages using markup and the elements are the building blocks of your page.', img: 'html.png')
 Subject.create(name: 'CSS', desc: 'CSS stands for Cascading Style Sheets. CSS describes how HTML elements are displayed on screen, paper, or in other media.', img:'css.png')
 Subject.create(name: 'JavaScript', desc: 'JavaScript is most commonly used as a client side scripting language. This means that JavaScript code is written into an HTML page and when a user requests an HTML page with JavaScript in it, the script is sent to the browser and it\'s up to the browser to do something with it.', img:'js.jpg')
