@@ -14,7 +14,7 @@
  *= require_self
  */
 .jumbotron{
-  height: 750px;
+  height: 90vh;
   background-image: url("jumboBackground.jpg");
   background-repeat: no-repeat;
   background-size: cover;
