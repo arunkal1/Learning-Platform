@@ -14,7 +14,7 @@
  *= require_self
  */
 .jumbotron{
-  height: 650px;
+  height: 750px;
   background-image: url("jumboBackground.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -27,10 +27,16 @@
 
 .display-4{
   color: white;
-  font-size: 100px;
+  font-size: 90px;
 }
 
 .lead{
   color: white;
   font-size: 30px;
+}
+
+.brief{
+  position: relative;
+  top: 150px;
+  font-size: 20px;
 }
