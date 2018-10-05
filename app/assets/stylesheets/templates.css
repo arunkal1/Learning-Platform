@@ -1,5 +1,5 @@
-nav{
-  height:5vh;
+nav .header{
+  height:10vh;
 }
 
 .navbar-nav a{
@@ -11,5 +11,11 @@ h1{
 }
 
 body{
-  background-color: #fafafa;""
+  background-color: #fafafa;
+}
+
+.footer{
+  position:fixed;
+  bottom: 0;
+  width:100%;
 }
