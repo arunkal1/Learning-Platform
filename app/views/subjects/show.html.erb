@@ -5,6 +5,8 @@
     <%= image_tag "#{@subject.img}", class: "subject-img" %>
     <p class="show-p"> <%=@subject.desc%></p>
   </div>
+  <%= render partial: 'topics/topics', collection: @subject.topics, as: :topic %>
+  <%= link_to "New Topic", new_subject_topic_path(@subject,) %>
   <div class="show-actions">
     <%= link_to "Edit Subject", edit_subject_path, class: "btn btn-primary" %>
     <%= link_to "Delete Subject", @subject, method: :delete, class: "btn btn-danger" %>
