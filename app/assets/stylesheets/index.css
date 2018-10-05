@@ -1,5 +1,11 @@
-.image_style{
-  width: 250px;
-  height: 300px;
-  margin-left: 0 auto;
+.card-design{
+  margin-top: 40px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.image_style {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
 }

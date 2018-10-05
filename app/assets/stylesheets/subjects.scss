@@ -1,3 +1,28 @@
 // Place all the styles related to the Subjects controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.show-h1 {
+  text-align: center;
+  font-size: 5em;
+}
+
+.show-p {
+  text-align: center;
+}
+
+.subject-img {
+  display: block;
+  margin: 20px auto;
+  width: 400px;
+}
+
+.content {
+  border: 1px lightgrey solid;
+  margin: 20px;
+  padding: 5px;
+}
+
+.show-actions {
+  text-align: center;
+}
