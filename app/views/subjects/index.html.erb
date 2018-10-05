@@ -1,2 +1,26 @@
-<h1>Subjects#index</h1>
-<p>Find me in app/views/subjects/index.html.erb</p>
+<h1>Subjects</h1>
+
+<div class="container">
+  <div class="row">
+    <div class="card-deck">
+      <% @subjects.each do |subject| %>
+        <div class="col-md-4">
+          <div class="card card-design">
+            <%= link_to (image_tag "#{subject.img}", class: "image_style"), subject%>
+            <div class="card-body">
+              <h5 class="card-title"><%= link_to "#{subject.name}", subject %></h5>
+              <p class="card-text"><%= truncate(subject.desc, :length => 130) %></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted"></small>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
+
+<%= link_to "Add a new Subject", new_subject_path, class: "btn btn-success btn_new" %>

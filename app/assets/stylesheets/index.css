@@ -1,0 +1,19 @@
+.card-design{
+  margin-top: 40px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.image_style {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+}
+
+.btn_new {
+  display: block;
+  margin: 40px auto;
+  width: 250px;
+  padding: 10px;
+
+}

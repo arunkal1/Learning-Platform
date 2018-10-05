@@ -1,2 +1,16 @@
-<h1>Subjects#show</h1>
-<p>Find me in app/views/subjects/show.html.erb</p>
+
+<div class="container">
+  <h1 class="show-h1"><%= @subject.name %></h1>
+  <div class="content">
+    <%= image_tag "#{@subject.img}", class: "subject-img" %>
+    <p class="show-p"> <%=@subject.desc%></p>
+    <h2>Topics: </h2>
+    <%= render partial: 'topics/topics', collection: @subject.topics, as: :topic %>
+  </div>
+  <div class="show-actions">
+    <%= link_to "New Topic", new_subject_topic_path(@subject), class: "btn btn btn-success"%>
+    <%= link_to "Edit Subject", edit_subject_path, class: "btn btn-primary" %>
+    <%= link_to "Delete Subject", @subject, method: :delete, class: "btn btn-danger" %>
+    <%= link_to "Back to Subjects", subjects_path, class: "btn btn-secondary" %>
+  </div>
+</div>
