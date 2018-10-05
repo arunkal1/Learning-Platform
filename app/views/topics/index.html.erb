@@ -1,2 +1,7 @@
-<h1>Topics#index</h1>
-<p>Find me in app/views/topics/index.html.erb</p>
+<h1>Topics</h1>
+
+<% @topics.each do |topic| %>
+  <h2>Topic name: <%= topic.name %></h2>
+  <!-- <%= image_tag "#{topic.img}" %> -->
+  <p>Topic Description: <%= topic.desc %></p>
+<% end %>
