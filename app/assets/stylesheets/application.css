@@ -15,15 +15,11 @@
  */
 
 .jumbotron{
-  height: 750px;
+  height: 100vh;
   background-image: url("jumboBackground.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.container{
-  position: relative;
-  top: 50px;
+  margin-bottom:0;
 }
 
 .display-4{
@@ -84,10 +80,10 @@ body{
   /* opacity: 0.7; */
   /* width: 600px; */
   position: relative;
-  top: 300px;
+  top: 150px;
   /* left: 00px; */
 }
 
-.display-4, .lead {
+/* .display-4, .lead {
   color: white;
-}
+} */
