@@ -1,41 +1,35 @@
-<h1>Topics</h1>
 
-<% @topics.each do |topic| %>
-  <h2>Topic name: <%= topic.name %></h2>
+<!-- <% @topics.each do |topic| %> -->
+  <!-- <h2>Topic name: <%= topic.name %></h2> -->
   <!-- <%= image_tag "#{topic.img}" %> -->
-  <p>Topic Description: <%= topic.desc %></p>
+  <!-- <p>Topic Description: <%= topic.desc %></p> -->
+<!-- <% end %> -->
+<% @topics.each do |topic| %>
+  <div class="accordion" id="accordionExample">
+    <div class="card">
+      <div class="card-header" id="heading<%= ((topic.id).to_words).capitalize %>">
+        <h5 class="mb-0">
+          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse<%= ((topic.id).to_words).capitalize %>" aria-expanded="true" aria-controls="collapse<%= ((topic.id).to_words).capitalize %>">
+            <%= topic.name %>
+          </button>
+        </h5>
+      </div>
+
+      <div id="collapse<%= ((topic.id).to_words).capitalize %>" class="collapse show" aria-labelledby="heading<%= ((topic.id).to_words).capitalize %>" data-parent="#accordionExample">
+        <div class="card-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                This is where the image will go
+                <!-- <%= image_tag "#{topic.img}" %> -->
+              </div>
+              <div class="col-md-8">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 <% end %>
-
-
-<div class="accordion" id="accordionExample">
-  <div class="card">
-    <div class="card-header" id="headingOne">
-      <h5 class="mb-0">
-        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Collapsible Group Item #1
-        </button>
-      </h5>
-    </div>
-
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-      <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingOne">
-      <h5 class="mb-0">
-        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Collapsible Group Item #1
-        </button>
-      </h5>
-    </div>
-
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-      <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-</div>
