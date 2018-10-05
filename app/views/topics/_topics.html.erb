@@ -22,8 +22,8 @@
             </div>
           </div>
           <div class="row">
-            <%= link_to "Edit Topic", edit_subject_topic_path(@subject,topic), class: "btn btn-primary"%>
-            <%= link_to "Delete Topic", [@subject,topic], method: :delete, class: "btn btn-danger" %>
+            <%= link_to "Edit", edit_subject_topic_path(@subject,topic), class: "btn btn-primary topic-action"%>
+            <%= link_to "Delete", [@subject,topic], method: :delete, class: "btn btn-danger topic-action" %>
           </div>
         </div>
       </div>
