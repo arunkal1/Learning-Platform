@@ -1,15 +1,15 @@
 <%= form_for subject do |s| %>
 
 
+<center>
 <% if subject.errors.any? %>
   <h2> <%= pluralize(subject.errors.count,'error') %> to fix </h2>
   <% subject.errors.each do |attr, message| %>
     <ul>
-      <li><%= message %></li>
+      <li style="list-style: none;"><%= message %></li>
     </ul>
   <% end %>
 <% end %>
-<center>
 <div class="form">
   <div class="field">
     <%= s.label :Name %>

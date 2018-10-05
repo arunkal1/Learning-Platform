@@ -1,16 +1,16 @@
 
 <%= form_for [@subject,topic] do |t| %>
 
+<center>
 <% if topic.errors.any? %>
   <h2> <%= pluralize(topic.errors.count,'error') %> to fix </h2>
   <% topic.errors.each do |attr, message| %>
     <ul>
-      <li><%= message %></li>
+      <li style="list-style: none;"><%= message %></li>
     </ul>
   <% end %>
 <% end %>
 
-<center>
 <div class="form">
   <div class="field">
     <%= t.label :Name %>
