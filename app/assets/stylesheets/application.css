@@ -13,11 +13,70 @@
  *= require_tree .
  *= require_self
  */
-.jumbotron {
-  height: 600px;
+
+.jumbotron{
+  height: 750px;
   background-image: url("jumboBackground.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.container{
+  position: relative;
+  top: 50px;
+}
+
+.display-4{
+  color: white;
+  font-size: 90px;
+}
+
+.lead{
+  color: white;
+  font-size: 30px;
+}
+
+.brief{
+  position: relative;
+  top: 150px;
+  font-size: 20px;
+}
+
+body{
+  background-color: #fafafa;
+}
+
+.form{
+  background-color: white;
+  /* justify-content: center; */
+  margin: auto;
+  width: 35vw;
+  margin: 0px;
+  border: 1px solid grey;
+  border-radius: 20px;
+}
+
+.nameInput input{
+  /* justify-content: center; */
+  width: 30vw;
+  background-color: #f2f2f2;
+}
+
+.descInput textarea{
+  /* justify-content: center; */
+  width: 30vw;
+  height: 400px;
+  background-color: #f2f2f2;
+}
+
+.button input{
+  /* justify-content: center; */
+  width: 30vw;
+  background-color: #404040;
+  color: white;
+  border-radius: 100px;
+  margin-bottom: 10px;
+  height: 50px;
 }
 
 .jumbotron .container {

@@ -1,0 +1,37 @@
+
+<%= form_for [@subject,topic] do |t| %>
+
+<center>
+<% if topic.errors.any? %>
+  <h2> <%= pluralize(topic.errors.count,'error') %> to fix </h2>
+  <% topic.errors.each do |attr, message| %>
+    <ul>
+      <li style="list-style: none;"><%= message %></li>
+    </ul>
+  <% end %>
+<% end %>
+
+<div class="form">
+  <div class="field">
+    <%= t.label :Name %>
+    <div class="nameInput">
+      <%= t.text_field :name %>
+    </div>
+  </div>
+  <br>
+  <div class="field">
+    <%= t.label :Description %>
+    <div class="descInput">
+      <%= t.text_area :desc %>
+    </div>
+  </div>
+  <br>
+  <div class="">
+    <div class="button">
+      <%= t.submit %>
+    </div>
+  </div>
+  <br>
+</div>
+</center>
+<% end %>
