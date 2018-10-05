@@ -1,8 +1,20 @@
 <h1>Subjects</h1>
-  <% @subjects.each do |subject| %>
-    <div class="container">
-      <!-- <img src="" alt=""> -->
-      <h2><%= link_to "#{subject.name}", subject %></h2>
-      <p><%= subject.desc %></p>
+<div class="container">
+  <div class="row">
+    <% @subjects.each do |subject| %>
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <%= image_tag "#{subject.img}", class: "image_style"%>
+        <div class="card-body">
+          <h5 class="card-title"><%= link_to "#{subject.name}", subject %></h5>
+          <p class="card-text"><%= subject.desc %></p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
     </div>
-  <% end %>
+    <% end %>
+  </div>
+</div>
+
+
+  <%= link_to "Add a new Subject", new_subject_path %>
