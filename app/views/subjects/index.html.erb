@@ -6,9 +6,9 @@
       <% @subjects.each do |subject| %>
         <div class="col-md-4">
           <div class="card card-design">
-            <%= image_tag "#{subject.img}", class: "image_style"%>
+            <%= link_to (image_tag "#{subject.img}", class: "image_style"), subject%>
             <div class="card-body">
-              <h5 class="card-title"><%= link_to "#{subject.name}", subject %></h5>
+              <h5 class="card-title"><%= subject.name %></h5>
               <p class="card-text"><%= truncate(subject.desc, :length => 130) %></p>
             </div>
             <div class="card-footer">
@@ -23,4 +23,4 @@
 
 
 
-<button type="button" class="btn btn-success"><%= link_to "Add a new Subject", new_subject_path %></button>
+<%= link_to "Add a new Subject", new_subject_path, class: "btn btn-success btn_new" %>

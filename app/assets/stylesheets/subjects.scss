@@ -14,15 +14,21 @@
 .subject-img {
   display: block;
   margin: 20px auto;
-  width: 400px;
 }
 
 .content {
-  border: 1px lightgrey solid;
+  // border: 1px lightgrey solid;
+  margin: auto;
   margin: 20px;
   padding: 5px;
 }
 
 .show-actions {
+  margin-top: 15px;
   text-align: center;
+}
+
+.topic-action {
+  margin: 2px;
+  padding: 0.1em;
 }

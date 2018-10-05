@@ -9,3 +9,11 @@
   margin: 0 auto;
   width: 200px;
 }
+
+.btn_new {
+  display: block;
+  margin: 40px auto;
+  width: 250px;
+  padding: 10px;
+
+}

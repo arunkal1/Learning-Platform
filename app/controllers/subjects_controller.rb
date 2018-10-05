@@ -17,14 +17,24 @@ class SubjectsController < ApplicationController
 
   def create
     @subject = Subject.new subject_params
-    @subject.save
-    redirect_to @subject
+    respond_to do |format|
+      if @subject.save
+        format.html{redirect_to @subject, notice: "#{subject.name} was created"}
+      else
+        format.html{render :new}
+      end
+    end
   end
 
   def update
     @subject = Subject.find params[:id]
-    @subject.update subject_params
-    redirect_to @subject
+    respond_to do |format|
+      if @subject.update subject_params
+        format.html{redirect_to @subject, notice: "'#{@subject.name}' was updated"}
+      else
+        format.html{render :edit}
+      end
+    end
   end
 
   def destroy
