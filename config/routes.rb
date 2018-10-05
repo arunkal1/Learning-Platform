@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   # get 'subjects/destroy'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-  resources :subjects do
+   resources :subjects do
     resources :topics
-  end
+   end
 end

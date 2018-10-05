@@ -1,0 +1,17 @@
+
+<%= form_for [@subject,topic] do |t| %>
+  <div class="field">
+    <%= t.label :name %>
+    <%= t.text_field :name %>
+  </div>
+  <br>
+  <div class="field">
+    <%= t.label :desc %>
+    <%= t.text_area :desc %>
+  </div>
+  <br>
+  <div class="">
+    <%= t.submit %>
+  </div>
+  <br>
+<% end %>
