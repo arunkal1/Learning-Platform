@@ -1,5 +1,5 @@
-<!--#[@subject,topic] do |t|  -->
-<%= form_for topic do |t| %>
+
+<%= form_for [@subject,topic] do |t| %>
   <div class="field">
     <%= t.label :name %>
     <%= t.text_field :name %>
