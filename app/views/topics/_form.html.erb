@@ -10,18 +10,28 @@
   <% end %>
 <% end %>
 
+<center>
+<div class="form">
   <div class="field">
     <%= t.label :Name %>
-    <%= t.text_field :name %>
+    <div class="nameInput">
+      <%= t.text_field :name %>
+    </div>
   </div>
   <br>
   <div class="field">
     <%= t.label :Description %>
-    <%= t.text_area :desc %>
+    <div class="descInput">
+      <%= t.text_area :desc %>
+    </div>
   </div>
   <br>
   <div class="">
-    <%= t.submit %>
+    <div class="button">
+      <%= t.submit %>
+    </div>
   </div>
   <br>
+</div>
+</center>
 <% end %>
